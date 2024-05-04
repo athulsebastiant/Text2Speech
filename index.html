@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Text to Speech <span>Converter</span></h1>
+        <textarea cols="30" rows="10" placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select></select>
+            <button><img src="images/play.png"> Listen</button>
+        </div>
+        <p>Voices available depend on the web browser</p>
+        <div id="google_translate_element"></div>
+    </div>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
